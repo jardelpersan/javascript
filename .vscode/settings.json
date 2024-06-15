@@ -1,4 +1,4 @@
 {
-    "emmet.showAbbreviationSuggestions": false,
-    "emmet.showExpandedAbbreviation": "never"
+    "emmet.showAbbreviationSuggestions": true,
+    "emmet.showExpandedAbbreviation": "always"
 }
