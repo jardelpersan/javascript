@@ -23,13 +23,16 @@
     </style>
 </head>
 <body>
-    <input class="btn" type="button" value="botão 1">
-    <input class="btn" type="button" value="botão 1">
-    <input class="btn" type="button" value="botão 1">
+    <input class="btn" type="button" value="botão 1" onclick="clicou(1)">
+    <input class="btn" type="button" value="botão 2" onclick="clicou(2)">
+    <input class="btn" type="button" value="botão 3" onclick="clicou(3)">
 
 
     <script>
-        
+        function clicou(n) {
+            alert(`Você clicou no botão ${n}`)
+            }
+    
     </script>
 </body>
 </html>
