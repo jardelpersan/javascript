@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <style>
+        button {
+            width: 100px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de medidas</h1>
+    <button onclick="converter()">Iniciar</button>
+    <script>
+       
+        
+        function converter() {
+            
+            let metro = Number(prompt("Digite uma disância em metros para convertermos:"))
+            const quilometro = metro / 1000
+            const centimetro = metro * 100
+            const hectare = metro / 10000
+            const milha = metro / 1609.34
+            const pes = metro * 0.3048
+
+            window.document.write(`A distância de ${metro} metro(s) convertida em quilometro é de ${quilometro} quilometro </br>`)
+            window.document.write(`A distância de ${metro} metro(s) convertida em centimetro é de ${centimetro} centímetros </br>`)
+            window.document.write(`A distância de ${metro} metro(s) convertida em hectare é de ${hectare} hectares</br>`)
+            window.document.write(`A distância de ${metro} metro(s) convertida em milha é de ${milha.toFixed(4)} milhas </br>`)
+            window.document.write(`A distância de ${metro} metro(s) convertida em pes é de ${pes} pes`)
+        }
+    </script>
+</body>
+</html>
