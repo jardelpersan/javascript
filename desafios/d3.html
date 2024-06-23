@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Antecessor e Sucessor</h1>
+    <button onclick="antesuc()">Antecessor e Sucessor</button>
+    <script>
+        function antesuc() {
+            let num = Number(prompt('Digite qualquer número inteiro:'))
+            let anterior = num -1
+            let posterior = num +1
+
+          alert(`O antecessor de ${num} é ${anterior} e o sucessor de ${num} é ${posterior}`)
+        }
+        
+    </script>
 </body>
 </html>

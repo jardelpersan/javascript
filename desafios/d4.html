@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troco</title>
+</head>
+<body>
+    <button onclick="comprar()">Comprar produto</button>
+    <script>
+        function comprar() {
+            let produto = prompt('Digite o produto que deseja comprar:')
+            let preço = Number(prompt('Digite o valor do produto para calcular o troco:'))
+            let pay = Number(prompt('Digite agora o valor que deseja entregar em dinheiro:'))
+
+           // preço.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})
+            //pay.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})
+            //troco.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})
+
+            if(pay < preço) {
+                let falta = Number(preço - pay)
+                alert(`Valor insuficiente para pagamento. Falta ${falta.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})} para completar a compra`)
+            } else {
+                let troco = pay - preço
+                alert(`Você comprou o produto ${produto} no valor de ${preço.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})} e entregou ${pay.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})}. Seu troco é no valor de ${troco.toLocaleString('pt-BR',{style:'currency', currency:"BRL"})}`)
+            }
+
+        }
+    </script>
+</body>
+</html>
