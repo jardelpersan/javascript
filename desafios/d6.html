@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperaturas</title>
+</head>
+<body>
+    <h1>Comvertendo temperaturas</h1>
+    <button onclick="converter()">Iniciar</button>
+
+    <div id="res">Clique no botão para converter</div>
+    
+
+    <script>
+        function converter() {
+            let celsius = Number(prompt("Digite uma temperatura em Graus Celsius (C°) para convertermos:"))
+
+            let kelvin = celsius + 273.15
+            let fahrenheit = celsius + 32
+
+            res.innerHTML = `${celsius} C° em graus Kelvin é: ${kelvin}<br>E em graus Fahrenheit é: ${fahrenheit}`
+        }
+    </script>
+</body>
+</html>
