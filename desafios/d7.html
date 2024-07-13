@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <h1>Conversor de Moedas(Real para Dólar)</h1>
+    <div>
+        <button class="botao" onclick="comecar()">
+            Inicie aqui
+        </button>
+    </div>
+    <p>Clique no botão acima para começar</p>
+    <div id="res"></div>
+</body>
+<script>
+    dolarAtual= prompt('Qual a atual cotação do Dolar?')
+    dolar = Number(dolarAtual)
+    
+    let res = document.getElementById('res')
+    function comecar() {
+        real = Number(prompt('quantos reais você tem?'))
+        let resultado = real / dolarAtual
+        res.innerHTML = (`Com ${real} reais, você consegue comprar ${resultado.toFixed(2)} dolares`)
+    }
+</script>
+</html>
